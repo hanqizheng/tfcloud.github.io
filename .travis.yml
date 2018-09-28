@@ -19,6 +19,7 @@ deploy:
   provider: pages
   local-dir: ./public
   target-branch: master
+  fqdn: tech.tfcloud.top
   skip-cleanup: true
   keep-history: true
   github-token: $GITHUB_TOKEN
