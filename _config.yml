@@ -24,7 +24,6 @@ public_dir: public
 tag_dir: source/tags
 archive_dir: archives
 category_dir: source/categories
-about_dir: about
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -82,3 +81,9 @@ deploy:
   type: git
   repo: git@github.com:tfcloud/tfcloud.github.io.git
   branch: gh-pages
+
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml

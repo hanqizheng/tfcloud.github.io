@@ -1,13 +1,5 @@
 ---
 title: test
-date: 2018-10-19 10:32:42
-categories:
-- linux
-- command
-tags: 
-- linux
-- command
-- program
-- os
+date: 2018-10-19 11:42:36
+author: yanjinkai
 ---
-### test page
