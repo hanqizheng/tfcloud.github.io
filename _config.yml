@@ -21,9 +21,10 @@ permalink_defaults:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
+tag_dir: source/tags
 archive_dir: archives
-category_dir: categories
+category_dir: source/categories
+about_dir: about
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
