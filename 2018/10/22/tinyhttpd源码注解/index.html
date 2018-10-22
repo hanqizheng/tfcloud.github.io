@@ -108,20 +108,27 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="TFCloud Tech">
-<meta property="og:url" content="https://tech.tfcloud.top/index.html">
+  <meta name="description" content="tinyhttpd源码注解网络通信预备知识 客户端-服务器通信模型头文件c语言标准库头文件定义了一些通用变量，宏和函数 &amp;lt;stdio.h&amp;gt;  size_t: 无符号整数类型，它是 sizeof 关键字的结果 FILE: 适合存储文件流信息的对象类型 EOF: 表示到达文件结尾的负整数 NULL: 空指针常量 perror(const char* str): 将错误信息输出到stderr">
+<meta name="keywords" content="tinyhttpd">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tinyhttpd源码注解">
+<meta property="og:url" content="https://tech.tfcloud.top/2018/10/22/tinyhttpd源码注解/index.html">
 <meta property="og:site_name" content="TFCloud Tech">
+<meta property="og:description" content="tinyhttpd源码注解网络通信预备知识 客户端-服务器通信模型头文件c语言标准库头文件定义了一些通用变量，宏和函数 &amp;lt;stdio.h&amp;gt;  size_t: 无符号整数类型，它是 sizeof 关键字的结果 FILE: 适合存储文件流信息的对象类型 EOF: 表示到达文件结尾的负整数 NULL: 空指针常量 perror(const char* str): 将错误信息输出到stderr">
 <meta property="og:locale" content="ZH-CN">
+<meta property="og:image" content="https://box.kancloud.cn/2016-04-02_56ff80dbcb915.png">
+<meta property="og:updated_time" content="2018-10-22T02:38:16.391Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TFCloud Tech">
+<meta name="twitter:title" content="tinyhttpd源码注解">
+<meta name="twitter:description" content="tinyhttpd源码注解网络通信预备知识 客户端-服务器通信模型头文件c语言标准库头文件定义了一些通用变量，宏和函数 &amp;lt;stdio.h&amp;gt;  size_t: 无符号整数类型，它是 sizeof 关键字的结果 FILE: 适合存储文件流信息的对象类型 EOF: 表示到达文件结尾的负整数 NULL: 空指针常量 perror(const char* str): 将错误信息输出到stderr">
+<meta name="twitter:image" content="https://box.kancloud.cn/2016-04-02_56ff80dbcb915.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://tech.tfcloud.top/">
+  <link rel="canonical" href="https://tech.tfcloud.top/2018/10/22/tinyhttpd源码注解/">
 
 
 
@@ -131,7 +138,7 @@
   };
 </script>
 
-  <title>TFCloud Tech</title>
+  <title>tinyhttpd源码注解 | TFCloud Tech</title>
   
 
 
@@ -178,8 +185,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -216,7 +222,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
   </li>
@@ -300,9 +306,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -334,11 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/22/tinyhttpd源码注解/" itemprop="url">
-                  tinyhttpd源码注解
-                </a>
+          <h1 class="post-title" itemprop="name headline">tinyhttpd源码注解
               
             
           </h1>
@@ -426,9 +428,7 @@
       
 
       
-        
-          
-            <h2 id="tinyhttpd源码注解"><a href="#tinyhttpd源码注解" class="headerlink" title="tinyhttpd源码注解"></a>tinyhttpd源码注解</h2><h3 id="网络通信预备知识"><a href="#网络通信预备知识" class="headerlink" title="网络通信预备知识"></a>网络通信预备知识</h3><ul>
+        <h2 id="tinyhttpd源码注解"><a href="#tinyhttpd源码注解" class="headerlink" title="tinyhttpd源码注解"></a>tinyhttpd源码注解</h2><h3 id="网络通信预备知识"><a href="#网络通信预备知识" class="headerlink" title="网络通信预备知识"></a>网络通信预备知识</h3><ul>
 <li>客户端-服务器通信模型<br><img src="https://box.kancloud.cn/2016-04-02_56ff80dbcb915.png" alt="客户端-服务器通信模型"><h3 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h3>c语言标准库头文件定义了一些通用变量，宏和函数</li>
 <li>&lt;stdio.h&gt; <ul>
 <li>size_t: 无符号整数类型，它是 sizeof 关键字的结果</li>
@@ -528,8 +528,6 @@
 </ul>
 <p><a href="https://sourceforge.net/projects/tinyhttpd/files/latest/download" target="_blank" rel="noopener"><strong><em>源码链接</em></strong></a></p>
 
-          
-        
       
     </div>
 
@@ -544,192 +542,53 @@
     
 
     
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>yanjinkai</li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://tech.tfcloud.top/2018/10/22/tinyhttpd源码注解/" title="tinyhttpd源码注解">https://tech.tfcloud.top/2018/10/22/tinyhttpd源码注解/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> unless stating additionally.</li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tech.tfcloud.top/2018/09/28/get-start/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="TFCloud">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="TFCloud Tech">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/28/get-start/" itemprop="url">
-                  get-start
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2018-09-28 15:47:47" itemprop="dateCreated datePublished" datetime="2018-09-28T15:47:47+08:00">2018-09-28</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-10-22 10:38:16" itemprop="dateModified" datetime="2018-10-22T10:38:16+08:00">2018-10-22</time>
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/source/tags/tinyhttpd/" rel="tag"># tinyhttpd</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><ul>
-<li>fork<a href="https://github.com/tfcloud/tfcloud.github.io.git" target="_blank" rel="noopener">同方有云技术博客git仓库</a></li>
-<li>从自己账号上克隆仓库到本地并切换到source分支</li>
-<li>安装hexo<blockquote>
-<p>npm i -g hexo-cli</p>
-</blockquote>
-</li>
-<li>用标准脚手架初始化文件<blockquote>
-<p>$ hexo new standard &lt; title &gt; [–categories=&lt;category_1&gt;,–tags=&lt;tag_1&gt;]</p>
-</blockquote>
-</li>
-<li>编辑生成的文件</li>
-<li>本地提交并push到远程source分支</li>
-<li>发起pr</li>
-</ul>
-<h2 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h2><ul>
-<li><p>在文件头添加分类和标签（分类按层次排列）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">categories:</span><br><span class="line">- Sports</span><br><span class="line">- Baseball</span><br><span class="line">tags:</span><br><span class="line">- Injury</span><br><span class="line">- Fight</span><br><span class="line">- Shocking</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地查看文章展示效果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm i -g hexo-server</span><br><span class="line"></span><br><span class="line">hexo serve</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>参阅 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">hexo官方文档</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/28/get-start/" rel="next" title="get-start">
+                <i class="fa fa-chevron-left"></i> get-start
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -739,14 +598,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -767,8 +627,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -841,6 +710,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tinyhttpd源码注解"><span class="nav-number">1.</span> <span class="nav-text">tinyhttpd源码注解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络通信预备知识"><span class="nav-number">1.1.</span> <span class="nav-text">网络通信预备知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#头文件"><span class="nav-number">1.2.</span> <span class="nav-text">头文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主函数"><span class="nav-number">1.3.</span> <span class="nav-text">主函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#startup"><span class="nav-number">1.4.</span> <span class="nav-text">startup</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#accept-request"><span class="nav-number">1.5.</span> <span class="nav-text">accept_request</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#serve-file"><span class="nav-number">1.6.</span> <span class="nav-text">serve_file</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#execute-cgi"><span class="nav-number">1.7.</span> <span class="nav-text">execute_cgi</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#get-line"><span class="nav-number">1.8.</span> <span class="nav-text">get_line</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cat"><span class="nav-number">1.9.</span> <span class="nav-text">cat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#not-found"><span class="nav-number">1.10.</span> <span class="nav-text">not_found</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#unimplemented"><span class="nav-number">1.11.</span> <span class="nav-text">unimplemented</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bad-request"><span class="nav-number">1.12.</span> <span class="nav-text">bad_request</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#headers"><span class="nav-number">1.13.</span> <span class="nav-text">headers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cannot-execute"><span class="nav-number">1.14.</span> <span class="nav-text">cannot_execute</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#error-die"><span class="nav-number">1.15.</span> <span class="nav-text">error_die</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -978,6 +863,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+
+
 
   
 
