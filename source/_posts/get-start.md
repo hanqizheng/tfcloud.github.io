@@ -8,7 +8,7 @@ date: 2018-09-28 15:47:47
 - 安装hexo
   > npm i -g hexo-cli
 - 用标准脚手架初始化文件
-  > $ hexo new standard < title >
+  > $ hexo new standard < title > [--categories=<category_1>,--tags=<tag_1>]
 - 编辑生成的文件
 - 本地提交并push到远程source分支
 - 发起pr
@@ -31,7 +31,7 @@ tags:
 ```
 npm i -g hexo-server
 
-hexo server
+hexo serve
 
 ```
 
